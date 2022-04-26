@@ -17,9 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test',[\App\Http\Controllers\HomeController::class,'index'] );
-Route::post('/per',[\App\Http\Controllers\HomeController::class,'abc'] );
-Route::post('/num',[\App\Http\Controllers\HomeController::class,'cba'] );
+//Route::resource('/infostudents', 'HomeController')->only([
+//    'ShowInfo'
+//]);
+
+
+Route::get('/test',[\App\Http\Controllers\HomeController::class,'ShowInfo'] );
+//Route::post('/per',[\App\Http\Controllers\HomeController::class,'abc'] );
+//Route::post('/num',[\App\Http\Controllers\HomeController::class,'cba'] );
 
 
 //Route::get('/hieu', function () {
