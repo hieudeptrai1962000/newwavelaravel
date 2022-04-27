@@ -15,14 +15,6 @@ class HomeController extends Controller
         $db = Student::all();
        return view('main',compact('db'));
     }
-    public function abc()
-    {
-        return Redirect::to('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-    }
-    public function cba()
-    {
-        return Redirect::to('https://www.youtube.com/watch?v=4fndeDfaWCg');
-    }
     public function store(Request $request)
     {
         $student=Student::create($request->all());
