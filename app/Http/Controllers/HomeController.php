@@ -13,7 +13,7 @@ class HomeController extends Controller
     public function ShowInfo()
     {
 //        $array = array('toyota' ,'honda' ,'pépi');
-        $db = Student::all();
+        $db = Student::orderBy('id','asc')->get();
        return view('main',compact('db'));
     }
     public function abc()
