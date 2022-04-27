@@ -84,7 +84,7 @@
     $(document).ready(function () {
         $('#form-add').submit(function (e) {
             e.preventDefault();
-            var url = $(this).attr('action');
+            var url = $(this).attr('data-url');
             $.ajax({
                 type: 'post',
                 url: url,
@@ -112,4 +112,4 @@
     })
 </script>
 </body>
-</html>​
+</html>
